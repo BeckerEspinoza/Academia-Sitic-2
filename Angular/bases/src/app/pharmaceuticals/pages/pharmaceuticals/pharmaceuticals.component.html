@@ -7,85 +7,13 @@
 <div class="flex flex-col sm:flex-col md:flex-row gap-4 py-4">
     <!-- Listado de medicamentos -->
     <div class="w-full">
-        <div class="p-4">
-            <div class="subheading-2">Listado</div>
-
-            <div class="border-b px-4 relative select-none block no-underline text-dark">
-                <div class="flex items-center gap-4">
-                    <div class="overflow-hidden flex-auto">
-                        <div class="body-2">
-                            {{ 'Ibuprofeno' | uppercase }}
-                        </div>
-                        <div class="body-1 text-secondary">$10.000</div>
-                    </div>
-                    <div class="flex-none flex flex-col items-end justify-center">
-                        <div class="body-2">
-                            Analgésico
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="border-b px-4 relative select-none block no-underline text-dark">
-                <div class="flex items-center gap-4">
-                    <div class="overflow-hidden flex-auto">
-                        <div class="body-2">
-                            {{ 'Ibuprofeno' | uppercase }}
-                        </div>
-                        <div class="body-1 text-secondary">$10.000</div>
-                    </div>
-                    <div class="flex-none flex flex-col items-end justify-center">
-                        <div class="body-2">
-                            Analgésico
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="border-b px-4 relative select-none block no-underline text-dark">
-                <div class="flex items-center gap-4">
-                    <div class="overflow-hidden flex-auto">
-                        <div class="body-2">
-                            {{ 'Ibuprofeno' | uppercase }}
-                        </div>
-                        <div class="body-1 text-secondary">$10.000</div>
-                    </div>
-                    <div class="flex-none flex flex-col items-end justify-center">
-                        <div class="body-2">
-                            Analgésico
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <pharmaceuticals-list [pharmaList]="pharmaceuticals"></pharmaceuticals-list>
     </div>
     <!-- Fin Listado de medicamentos -->
 
     <!-- Formulario -->
     <div class="w-full">
-        <div class="p-4">
-            <div class="subheading-2">Agregar Medicamento</div>
-            <form>
-                <mat-form-field class="w-full">
-                    <mat-label>Nombre</mat-label>
-                    <input matInput name="nombre">
-                </mat-form-field>
-
-                <mat-form-field class="w-full">
-                    <mat-label>Precio</mat-label>
-                    <input matInput name="precio">
-                </mat-form-field>
-
-                <mat-select name="tipo" class="w-full">
-                    <mat-label>Tipo</mat-label>
-                    <mat-option value="0">Sin Tipo</mat-option>
-                </mat-select>
-
-                <button type="submit" mat-raised-button color="primary" class="w-full">
-                    <mat-icon svgIcon="mat:add" class="icon-base" inline="true"></mat-icon>
-                </button>
-            </form>
-        </div>
+        <add-pharmaceuticals></add-pharmaceuticals>
     </div>
     <!-- Fin formulario -->
 </div>
