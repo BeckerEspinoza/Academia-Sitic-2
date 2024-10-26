@@ -4,11 +4,15 @@ import { PharmaceuticalsComponent } from './pages/pharmaceuticals/pharmaceutical
 import { MatInputModule } from '@angular/material/input'
 import { MatSelectModule } from '@angular/material/select'
 import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
+import { ListComponentHtmlComponent } from './components/list/list.component.html/list.component.html.component';
+import { AddPhamaceuticalsHtmlComponent } from './components/add-pharmaceuticals/add-phamaceuticals.html/add-phamaceuticals.html.component'
 
 @NgModule({
   declarations: [
-    PharmaceuticalsComponent
+    PharmaceuticalsComponent,
+    ListComponentHtmlComponent,
+    AddPhamaceuticalsHtmlComponent
   ],
   imports: [
     CommonModule,
