@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PharmaceuticalsComponent } from './pharmaceuticals.component';
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
+import { PharmaceuticalsComponent } from './pages/pharmaceuticals/pharmaceuticals.component';
+import { MatInputModule } from '@angular/material/input'
 import { MatSelectModule } from '@angular/material/select'
-import { MatIconModule } from '@angular/material/icon';
-
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon'
 
 @NgModule({
   declarations: [
@@ -15,12 +13,10 @@ import { MatIconModule } from '@angular/material/icon';
   imports: [
     CommonModule,
     MatInputModule,
-    MatButtonModule,
     MatSelectModule,
+    MatButtonModule,
     MatIconModule
   ],
-  exports:[
-    PharmaceuticalsComponent
-  ]
+  exports: [PharmaceuticalsComponent]
 })
 export class PharmaceuticalsModule { }
